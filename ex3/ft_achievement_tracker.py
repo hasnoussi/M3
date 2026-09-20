@@ -1,5 +1,17 @@
 #!/usr/bin/env python3
 
+ 
+import random
+ 
+ACHIEVEMENTS = [
+    "Crafting Genius", "Strategist", "World Savior", "Speed Runner",
+    "Survivor", "Master Explorer", "Treasure Hunter", "Unstoppable",
+    "First Steps", "Collector Supreme", "Untouchable", "Sharp Mind",
+    "Boss Slayer", "Hidden Path Finder",
+]
+ 
+PLAYERS = ["Alice", "Bob", "Charlie", "Dylan"]
+ 
 def gen_player_achievements(achievements: list[str]) -> set[str]:
     count = random.randint(4, len(achievements) - 5)
     picked = random.sample(achievements, count)
